@@ -1,0 +1,29 @@
+main {
+    .planes {
+        @include display(grid, null, null);
+        @include generateGrid(0 auto, "gratuito gratuito gratuito"
+            "bronce plata oro", repeat(3, 1fr), 0.1fr 1fr, 15px, 15px);
+
+        .planGratuito {
+            grid-area: gratuito;
+        }
+
+        .planBronce {
+            grid-area: bronce;
+        }
+
+        .planPlata {
+            grid-area: plata;
+        }
+
+        .planOro {
+            grid-area: oro;
+        }
+
+        .textoPrincipal {
+            .planesCentrados{
+                text-align: $center;
+            }
+        }
+    }
+}

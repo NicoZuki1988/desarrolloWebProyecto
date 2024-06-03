@@ -1,0 +1,46 @@
+header {
+    @include display(flex, space-between, null);
+    position: sticky !important;
+    top: 0;
+    box-shadow: 0px 5px 10px rgba(29, 13, 67, 0.5);
+    z-index: 100;
+
+
+
+    nav {
+        background-color: $verde;
+
+        img {
+            width: $widthImgHeaderFooter;
+        }
+
+        .fondoMenu {
+            background-color: $verde;
+        }
+
+        .menuContainer {
+            @include display(flex, space-around, center);
+            list-style: none;
+            width: 100%;
+            font: 1rem "Roboto", sans-serif;
+
+            li {
+                a {
+                    text-decoration: none;
+                    list-style: none;
+                    color: $blanco;
+
+                }:hover {
+                        background-color: $blanco;
+                    }
+
+            }
+        }
+
+    }
+
+    & .menuNavegacion {
+        @include display(flex, space-around, center);
+        width: 100%;
+    }
+}

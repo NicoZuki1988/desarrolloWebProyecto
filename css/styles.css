@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(244, 239, 239);
+  text-align: center;
+  font-size: 60px;
+}
+
+main {
+  background-color: rgb(208, 49, 32);
+}
+main .textoPrincipal {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 15px;
+}
+
+main .seccionPrincipal .video2Princ, main .seccionPrincipal .video1Princ {
+  width: 100%;
+  height: 100%;
+}
+
+main .rotate {
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  transition-delay: 5ms;
+}
+main .rotate:hover {
+  transform: rotate(-45deg);
+}
+
+main .seccionPrincipal {
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas: "txtPrincipal imgPrincipal" "video1Ppal video2Ppal" "video1Ppal video2Ppal";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  padding: 15px;
+  height: 100vh;
+  width: 90vw;
+}
+main .seccionPrincipal .centrado {
+  text-align: center;
+  align-content: center;
+  font: 50px "Roboto", sans-serif;
+  grid-area: txtPrincipal;
+}
+main .seccionPrincipal .imgPrinc {
+  grid-area: imgPrincipal;
+}
+main .seccionPrincipal .imgPrinc img {
+  width: 100%;
+}
+main .seccionPrincipal .video1Princ {
+  grid-area: video1Ppal;
+}
+main .seccionPrincipal .video2Princ {
+  grid-area: video2Ppal;
+}
+
+main section .txtUbicacion {
+  color: rgb(244, 239, 239);
+  text-align: center;
+  font: 30px "Roboto", sans-serif;
+  padding: 20px;
+}
+
+main .formBusqueda form {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+main .formBusqueda form input {
+  text-align: center;
+}
+main .formBusqueda form [type=search] {
+  border: none;
+  outline: 2px solid #36257a;
+  border-radius: 15px;
+  line-height: 2.65;
+  width: 50%;
+}
+main .container .descripcionCompeticion {
+  color: rgb(244, 239, 239);
+  font-family: "Roboto", sans-serif;
+}
+
+main .planes {
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas: "gratuito gratuito gratuito" "bronce plata oro";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+main .planes .planGratuito {
+  grid-area: gratuito;
+}
+main .planes .planBronce {
+  grid-area: bronce;
+}
+main .planes .planPlata {
+  grid-area: plata;
+}
+main .planes .planOro {
+  grid-area: oro;
+}
+main .planes .textoPrincipal .planesCentrados {
+  text-align: center;
+}
+
+main .formularioContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+main .formularioContacto form {
+  width: 100%;
+  max-width: 400px;
+}
+main .formularioContacto input {
+  width: 100%;
+}
+main .formularioContacto .mensaje {
+  width: 100%;
+  margin-top: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky !important;
+  top: 0;
+  box-shadow: 0px 5px 10px rgba(29, 13, 67, 0.5);
+  z-index: 100;
+}
+header nav {
+  background-color: rgb(31, 155, 31);
+}
+header nav img {
+  width: 50px;
+}
+header nav .fondoMenu {
+  background-color: rgb(31, 155, 31);
+}
+header nav .menuContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  font: 1rem "Roboto", sans-serif;
+}
+header nav .menuContainer li a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+header nav .menuContainer li :hover {
+  background-color: white;
+}
+header .menuNavegacion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: rgb(190, 227, 21);
+}
+footer .datosContacto {
+  font-style: italic;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer .redesSociales {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+}
+
+main .planes {
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas: "gratuito gratuito gratuito" "bronce plata oro";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+main .planes .planGratuito {
+  grid-area: gratuito;
+}
+main .planes .planBronce {
+  grid-area: bronce;
+}
+main .planes .planPlata {
+  grid-area: plata;
+}
+main .planes .planOro {
+  grid-area: oro;
+}
+main .planes .textoPrincipal .planesCentrados {
+  text-align: center;
+}
+
+/* MOBILE */
+@media screen and (max-width: 972px) {
+  main h1 {
+    font-size: 30px;
+  }
+  main .textoPrincipal h2 {
+    font-size: 20px;
+  }
+  main .seccionPrincipal {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    height: 100%;
+  }
+  main .seccionPrincipal .centrado {
+    text-align: center;
+    align-content: center;
+    font: 20px "Roboto", sans-serif;
+    grid-area: txtPrincipal;
+  }
+  main .seccionPrincipal .rotate {
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 5ms;
+  }
+  main .seccionPrincipal .rotate:hover {
+    transform: scale(1.25, 1.25);
+  }
+  main .seccionPrincipal .video1Princ {
+    grid-area: video1Ppal;
+    width: 100%;
+    height: 400px;
+  }
+  main .seccionPrincipal .video2Princ {
+    grid-area: video2Ppal;
+    width: 100%;
+    height: 400px;
+  }
+  main .planes {
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas: "gratuito" "bronce" "plata" "oro";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    flex-direction: column;
+    padding: 20px 20px;
+    background-color: rgb(190, 227, 21);
+  }
+}
+@media screen and (max-width: 420px) {
+  main .formularioContacto form {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

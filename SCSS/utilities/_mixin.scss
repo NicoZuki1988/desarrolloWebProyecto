@@ -1,0 +1,20 @@
+@mixin display($display, $justify-content: null, $align-items: null) {
+    display: $display;
+
+    @if $justify-content !=null {
+        justify-content: $justify-content;
+    }
+
+    @if $align-items !=null {
+        align-items: $align-items;
+    }
+}
+
+@mixin generateGrid($margin,$gridTemplateAreas, $grid-template-columns, $grid-template-rows, $grid-column-gap, $grid-row-gap) {
+    margin: $margin;
+    grid-template-areas: $gridTemplateAreas;
+    grid-template-columns: $grid-template-columns;
+    grid-template-rows: $grid-template-rows;
+    grid-column-gap: $grid-column-gap;
+    grid-row-gap: $grid-row-gap;
+}

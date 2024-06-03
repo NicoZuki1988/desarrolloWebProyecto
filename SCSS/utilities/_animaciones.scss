@@ -1,0 +1,12 @@
+main {
+    .rotate {
+        transition-property: transform;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+        transition-delay: 5ms;
+
+        &:hover {
+            transform: rotate(-45deg);
+        }
+    }
+}

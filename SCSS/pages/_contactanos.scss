@@ -1,0 +1,18 @@
+main {
+    .formularioContacto{
+       @include display(flex, center, center);
+        height: 70vh;
+
+        form {
+            width: 100%;
+            max-width: 400px;
+        } input {
+            width: 100%;
+        }
+        .mensaje {
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+    } 
+}

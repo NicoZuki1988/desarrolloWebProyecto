@@ -1,0 +1,25 @@
+main {
+    .formBusqueda {
+        form {
+            @include display(flex, space-around, null);
+            padding: 20px;
+
+            input {
+                text-align: $center;
+            } [type=search] {
+                    border: none;
+                    outline: 2px solid #36257a;
+                    border-radius: 15px;
+                    line-height: 2.65;
+                    width: 50%;
+                }
+        }
+    }
+
+    .container {
+        .descripcionCompeticion {
+            color: $whiteH1;
+            font-family: "Roboto", sans-serif;
+        }
+    }
+}
