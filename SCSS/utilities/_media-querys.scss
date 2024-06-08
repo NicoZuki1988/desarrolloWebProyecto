@@ -59,6 +59,12 @@
                 "bronce"
                 "plata"
                 "oro", auto, auto, 15px, 15px);
+
+                .planGratuito{
+                    h2{
+                        text-align: $center;
+                    }
+                }
         }
     }
 
