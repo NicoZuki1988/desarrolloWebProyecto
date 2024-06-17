@@ -94,9 +94,6 @@ main .container .descripcionCompeticion {
   font-family: "Roboto", sans-serif;
 }
 
-/*background: hsl(var(--color-secondary-h), var(--color-secondary-s), var(--color-variant-i_high5)) url(/asset/logo/toornament/pattern-background-header.svg?120069819) no-repeat bottom center;
-background-blend-mode: initial;
-color: hsl(var(--color-standard-h), var(--color-standard-s), var(--color-variant-i_bottom));*/
 main .planes {
   display: grid;
   margin: 0 auto;
@@ -310,6 +307,18 @@ main .planes .textoPrincipal .planesCentrados {
   main .formularioContacto form {
     width: 100%;
     max-width: 300px;
+  }
+  main .formBusqueda form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  main .formBusqueda form input {
+    text-align: center;
+  }
+  main .formBusqueda form [type=search] {
+    width: 100%;
   }
 }
 

@@ -6,7 +6,7 @@ main {
 
             input {
                 text-align: $center;
-            } [type=search] {
+            } & [type=search] {
                     border: none;
                     outline: 2px solid #36257a;
                     border-radius: 15px;
@@ -30,6 +30,3 @@ main {
     }
 }
 
-/*background: hsl(var(--color-secondary-h), var(--color-secondary-s), var(--color-variant-i_high5)) url(/asset/logo/toornament/pattern-background-header.svg?120069819) no-repeat bottom center;
-background-blend-mode: initial;
-color: hsl(var(--color-standard-h), var(--color-standard-s), var(--color-variant-i_bottom));*/
