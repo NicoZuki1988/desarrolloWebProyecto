@@ -260,6 +260,8 @@ main .planes .textoPrincipal .planesCentrados {
     margin: auto;
     flex-direction: column;
     height: 100%;
+    width: 100%;
+    padding: 20px;
   }
   main .seccionPrincipal .centrado {
     text-align: center;
