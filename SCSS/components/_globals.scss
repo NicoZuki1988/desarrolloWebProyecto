@@ -7,16 +7,21 @@
 h1 {
     color: $whiteH1;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
+    padding-top: 50px;
+    height: 150px;
+    //background: linear-gradient(90deg, rgba(97,6,125,1) 23%, rgba(131,64,187,1) 100%);
+    background: linear-gradient(90deg, rgba(38,7,71,0.8492647058823529) 23%, rgba(23,6,68,1) 100%);
+
+
 }
 
 main {
-    background-color: $rojo;
+    background: $blanco;
 
-    .textoPrincipal{
+    .textoPrincipal {
         font-family: "Roboto", sans-serif;
         font-size: 1rem;
         padding: 15px;
     }
 }
-

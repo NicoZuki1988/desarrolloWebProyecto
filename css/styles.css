@@ -7,11 +7,14 @@
 h1 {
   color: rgb(244, 239, 239);
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
+  padding-top: 50px;
+  height: 150px;
+  background: linear-gradient(90deg, rgba(38, 7, 71, 0.8492647059) 23%, rgb(23, 6, 68) 100%);
 }
 
 main {
-  background-color: rgb(208, 49, 32);
+  background: white;
 }
 main .textoPrincipal {
   font-family: "Roboto", sans-serif;
@@ -24,16 +27,6 @@ main .seccionPrincipal .video2Princ, main .seccionPrincipal .video1Princ {
   height: 100%;
 }
 
-main .rotate {
-  transition-property: transform;
-  transition-duration: 1s;
-  transition-timing-function: ease-in;
-  transition-delay: 5ms;
-}
-main .rotate:hover {
-  transform: rotate(-45deg);
-}
-
 main .seccionPrincipal {
   display: grid;
   margin: 0 auto;
@@ -42,31 +35,36 @@ main .seccionPrincipal {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 15px;
   grid-row-gap: 15px;
-  padding: 15px;
-  height: 100vh;
+  padding: 80px 80px 5px 80px;
+  height: 110vh;
   width: 90vw;
+  row-gap: 70px;
 }
 main .seccionPrincipal .centrado {
   text-align: center;
   align-content: center;
-  font: 50px "Roboto", sans-serif;
+  font: 40px "Roboto", sans-serif;
   grid-area: txtPrincipal;
+  color: #0059cd;
 }
 main .seccionPrincipal .imgPrinc {
+  display: flex;
   grid-area: imgPrincipal;
+  justify-content: center;
 }
 main .seccionPrincipal .imgPrinc img {
-  width: 100%;
+  width: 50%;
 }
 main .seccionPrincipal .video1Princ {
   grid-area: video1Ppal;
+  height: 100%;
 }
 main .seccionPrincipal .video2Princ {
   grid-area: video2Ppal;
+  height: 100%;
 }
 
 main section .txtUbicacion {
-  color: rgb(244, 239, 239);
   text-align: center;
   font: 30px "Roboto", sans-serif;
   padding: 20px;
@@ -75,7 +73,7 @@ main section .txtUbicacion {
 main .formBusqueda form {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  padding: 50px;
 }
 main .formBusqueda form input {
   text-align: center;
@@ -87,11 +85,18 @@ main .formBusqueda form [type=search] {
   line-height: 2.65;
   width: 50%;
 }
+main .container div img {
+  width: 50px;
+  height: 50px;
+}
 main .container .descripcionCompeticion {
-  color: rgb(244, 239, 239);
+  color: #211835;
   font-family: "Roboto", sans-serif;
 }
 
+/*background: hsl(var(--color-secondary-h), var(--color-secondary-s), var(--color-variant-i_high5)) url(/asset/logo/toornament/pattern-background-header.svg?120069819) no-repeat bottom center;
+background-blend-mode: initial;
+color: hsl(var(--color-standard-h), var(--color-standard-s), var(--color-variant-i_bottom));*/
 main .planes {
   display: grid;
   margin: 0 auto;
@@ -100,6 +105,10 @@ main .planes {
   grid-template-rows: 0.1fr 1fr;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
+}
+main .planes h2 {
+  text-align: center;
+  padding: 30px;
 }
 main .planes .planGratuito {
   grid-area: gratuito;
@@ -127,12 +136,17 @@ main .formularioContacto form {
   width: 100%;
   max-width: 400px;
 }
-main .formularioContacto input {
+main .formularioContacto form input {
+  border: solid 2px;
   width: 100%;
 }
-main .formularioContacto .mensaje {
+main .formularioContacto form .mensaje {
   width: 100%;
   margin-top: 10px;
+  border: solid 2px;
+}
+main .formularioContacto form button {
+  width: 100%;
 }
 
 header {
@@ -144,13 +158,13 @@ header {
   z-index: 100;
 }
 header nav {
-  background-color: rgb(31, 155, 31);
+  background: #211835;
 }
 header nav img {
   width: 50px;
 }
 header nav .fondoMenu {
-  background-color: rgb(31, 155, 31);
+  background: #211835;
 }
 header nav .menuContainer {
   display: flex;
@@ -180,18 +194,27 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
-  background-color: rgb(190, 227, 21);
+  background-color: #211835;
 }
 footer .datosContacto {
   font-style: italic;
-  font-size: 20px;
+  font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+}
+footer .datosContacto p {
+  margin: 0;
 }
 footer .redesSociales {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 200px;
+}
+footer .redesSociales svg {
+  width: 60%;
+  height: 60%;
 }
 
 main .planes {
@@ -202,6 +225,10 @@ main .planes {
   grid-template-rows: 0.1fr 1fr;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
+}
+main .planes h2 {
+  text-align: center;
+  padding: 30px;
 }
 main .planes .planGratuito {
   grid-area: gratuito;
@@ -225,6 +252,9 @@ main .planes .textoPrincipal .planesCentrados {
     font-size: 30px;
   }
   main .textoPrincipal h2 {
+    font-size: 25px;
+  }
+  main section .txtUbicacion {
     font-size: 20px;
   }
   main .seccionPrincipal {
@@ -239,15 +269,6 @@ main .planes .textoPrincipal .planesCentrados {
     align-content: center;
     font: 20px "Roboto", sans-serif;
     grid-area: txtPrincipal;
-  }
-  main .seccionPrincipal .rotate {
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
-    transition-delay: 5ms;
-  }
-  main .seccionPrincipal .rotate:hover {
-    transform: scale(1.25, 1.25);
   }
   main .seccionPrincipal .video1Princ {
     grid-area: video1Ppal;
@@ -268,16 +289,21 @@ main .planes .textoPrincipal .planesCentrados {
     grid-column-gap: 15px;
     grid-row-gap: 15px;
   }
-  main .planes .planGratuito h2 {
+  main .planes h3 {
     text-align: center;
+    font-size: 20px;
   }
   footer {
     display: flex;
     justify-content: center;
     align-items: space-around;
     flex-direction: column;
+    row-gap: 15px;
     padding: 20px 20px;
-    background-color: rgb(190, 227, 21);
+    background-color: #211835;
+  }
+  footer svg {
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 420px) {

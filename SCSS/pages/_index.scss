@@ -4,33 +4,42 @@ main {
         @include generateGrid(0 auto, "txtPrincipal imgPrincipal"
             "video1Ppal video2Ppal"
             "video1Ppal video2Ppal", repeat(2, 1fr), repeat(3, 1fr), 15px, 15px);
-        padding: 15px;
-        height: 100vh;
+        padding: 80px 80px 5px 80px;
+       
+        height: 110vh;
         width: 90vw;
+        row-gap: 70px;
 
         .centrado {
             text-align: $center;
             align-content: $center;
-            font: 50px "Roboto", sans-serif;
+            font: 40px "Roboto", sans-serif;
             grid-area: txtPrincipal;
+            color: #0059cd;
         }
-
+        &
         .imgPrinc {
+            display: flex;
             grid-area: imgPrincipal;
+            justify-content: $center;
+
 
             img {
-                width: 100%;
+                width: 50%;
             }
         }
-
+        &
         .video1Princ {
             grid-area: video1Ppal;
             @extend %gridAreaVideos;
+            height: 100%;
         }
-
+        &
         .video2Princ {
             grid-area: video2Ppal;
             @extend %gridAreaVideos;
+            height: 100%;
+
         }
 
 

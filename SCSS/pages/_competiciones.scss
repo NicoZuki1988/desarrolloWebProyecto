@@ -2,7 +2,7 @@ main {
     .formBusqueda {
         form {
             @include display(flex, space-around, null);
-            padding: 20px;
+            padding: 50px;
 
             input {
                 text-align: $center;
@@ -16,10 +16,20 @@ main {
         }
     }
 
-    .container {
+    & .container {
+        div {
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        } &
         .descripcionCompeticion {
-            color: $whiteH1;
+            color: $violeta;
             font-family: "Roboto", sans-serif;
         }
     }
 }
+
+/*background: hsl(var(--color-secondary-h), var(--color-secondary-s), var(--color-variant-i_high5)) url(/asset/logo/toornament/pattern-background-header.svg?120069819) no-repeat bottom center;
+background-blend-mode: initial;
+color: hsl(var(--color-standard-h), var(--color-standard-s), var(--color-variant-i_bottom));*/

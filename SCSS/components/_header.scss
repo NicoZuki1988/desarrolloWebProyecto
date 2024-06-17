@@ -8,14 +8,14 @@ header {
 
 
     nav {
-        background-color: $verde;
+        background: $violeta;
 
         img {
             width: $widthImgHeaderFooter;
         }
-
+        &
         .fondoMenu {
-            background-color: $verde;
+            background: $violeta;
         }
 
         .menuContainer {
@@ -30,7 +30,7 @@ header {
                     list-style: none;
                     color: $blanco;
 
-                }:hover {
+                } & :hover {
                         background-color: $blanco;
                     }
 
